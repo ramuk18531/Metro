@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+	}
+header{
+    padding: 1em;
+    color: blue;
+    background-color: cyan;
+    clear: left;
+    text-align: center;
+	}
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+	}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	}
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    height:450px;
+}
+
+aside {
+    float: right;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+a {display:inline-block; margin-right:10px;}
+</style>
+<script type="text/javascript">
+    window.onload = function(){
+        window.displayImgCount = 0;
+        function cycleImage(){
+            if (displayImgCount !== 0) {
+                document.getElementById("img" + displayImgCount).style.display = "none";
+            }
+            displayImgCount = displayImgCount === 5 ? 1 : displayImgCount + 1;
+            document.getElementById("img" + displayImgCount).style.display = "block";
+            setTimeout(cycleImage, 1000);
+        }
+        cycleImage();
+    }
+</script>
+</head>
+<body>
+	<form action="Homeservlet" action="post">
+		<p align="right">
+		<input type="submit" name="command" value="settings">
+		<input type="submit" name="command" value="Signoff" >
+		</p>
+		<div class="container">
+		<font face="Italic" size="2"><Marquee><h1>Welcome to Hyderabad Metro</h1></marquee>
+			<img src="images/metro1.jpg" style="width:100px;height;100px"></font><br />
+		</div>
+<nav>
+  <ul>
+    <li><a href="#"><h2 style="font-size:120%;">About Metro</h2></a></li>
+    <li><a href="#"><h2 style="font-size:120%;">Tickets & Fares</a></li>
+    <li><a href="#"><h2 style="font-size:120%;">View Routes</h2></a></li>
+    <li><a href="#"><h2 style="font-size:120%;">Hyderabad Metro Timings</a></li>
+   <li><a href="#"><h2 style="font-size:120%;">Contact Us</a></li>
+   </ul>
+</nav>
+<aside>
+<ul> <h2 style="font-size:150%;color:red">Left wing Stops</h2>
+	<li> <h3>LB nagar</h2> </li>
+	<li> <h3>Nagole</h2> </li>
+	<li> <h3>Uppal</h2> </li>
+	<li> <h3>Secunderabad</h2> </li>
+</UL>
+</aside>
+	<article>
+    
+    <img id="img1" src="images/4.jpg" width="800" height="300">
+    <img id="img2" src="images/3.jpg" width="800" height="300">
+    <img id="img3" src="images/5.jpg" width="800" height="300">
+     <img id="img4" src="images/6.png" width="800" height="300">
+      <img id="img5" src="images/7.png" width="400" height="600">
+      <img id="img5" src="images/8.png" width="400" height="600">
+	</article>
+<footer>Pleasure Serving you</footer>
+</form>
+</body>
+</html>

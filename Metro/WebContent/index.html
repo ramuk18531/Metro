@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+.containerBox {
+    position: relative;
+    display: inline-block;
+	}
+.text-box {
+    position: absolute;    
+    height: 50%;
+    text-align: left;    
+    width: 100%;
+	content: '';
+	display: inline-block;
+
+h4 {
+   display: inline-block;
+   font-size: 20px; /*or whatever you want*/
+   color: #FFF;   	
+	}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+	}
+</style>
+</head>
+<body background="images/metro1.jpg">
+	<form action="Indexservlet" method="post">
+	<marquee><h1> Welcome to Hyderabad METRO </h1></marquee>
+	<div class="containerBox">
+ 		<div class="img">	<img src="images/metro1.jpg" alt="" /></div>
+    			<div class="text-box">
+					<h1>
+						User Name:  <input type="text" name="uname" value=""><br>
+						Password:   <input type="password" name="password"><br><br>
+   						<input type="submit" name="command" value="Login" />
+   						<input type="submit"name="command" value="Sign Up" />
+					</h1>
+		        </div>
+		</div>
+	</form>
+</body>
+</html> 

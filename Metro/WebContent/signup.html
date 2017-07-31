@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<style>
+
+.img{
+
+   background-size: 100% 100%;
+
+height: 100%;
+
+position: absolute; 
+
+width: 100%; /* for IE 6 */
+}
+.text { 
+   position: absolute; 
+   top: 50px; 
+   left: 10%; 
+   width: 200%; 
+}
+
+</style>
+
+<title>Insert title here</title>
+</head>
+<body>
+<form action="SignupServlet" method="post">
+
+
+<div class="img">
+<img src="images/9.png" alt="" />
+<div class="text">
+
+<marquee><h1>Welocme to Hyd Metro</h1></marquee>
+
+
+First name:  	    <input type="text" name="fname" value=""><br>
+Last name:   		<input type="text" name="lname" value=""><br>   
+User Name:			<input type="text" name="uname"><br><br>
+Password:   		<input type="password" name="pass"><br>
+Confirm Password:   <input type="password" name="cpass"><br>
+E-mail:				<input type="text" name="email"><br>
+Phone Number:		<input type="number" name="phonenum"><br><br> 
+Age:				<input type="number" name="age"><br><br> 
+
+   		<input type="submit" name="comm" value="Signup" />
+   		<input type="submit" name="comm" value="Login" />
+				<input type="reset" />
+   	    		   <input type="button" value="Cancel" />
+   	    		   </div>
+   	    		   
+</div>	</form>
+
+
+</body>
+</html>
